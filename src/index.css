@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(43deg, black, #323);
+        @apply text-primary;
+    }
+}
+
+@layer components {
+    .button__primary {
+        @apply bg-secondary text-white py-2 px-4 rounded-sm shadow-lg duration-200;
+    }
+
+    .button__primary:not(:disabled):hover {
+        opacity: .8;
+    }
+
+    .button__primary:disabled {
+        @apply cursor-progress opacity-50;
+    }
+
+    .hamburger__line {
+        @apply w-full h-[2px] bg-primary duration-200;
+    }
+
+    .hamburger__line:first-child {
+        transform-origin: left bottom;
+    }
+
+    .hamburger__line:last-child {
+        transform-origin: left top;
+    }
+
+    .hamburger__active span:first-child {
+        transform: rotate(45deg) translateY(-5px);
+    }
+
+    .hamburger__active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger__active span:last-child {
+        transform: rotate(-45deg) translate(-1px, 5px);
+    }
+
+    .bg__blur {
+        background-color: rgba(0, 0, 0, 0.75);
+        @apply backdrop-blur-sm;
+    }
+
+    #experience::before,
+    #experience::after,
+    #portfolio::before {
+        content: "";
+        @apply absolute w-[30%] h-[30%] z-[-1];
+    }
+
+    #experience::before {
+        @apply -top-[30%] left-0 bg-[#A71D31];
+        filter: blur(200px);
+    }
+
+    #experience::after {
+        @apply -bottom-[40%] right-0 bg-[#63D471];
+        filter: blur(300px)
+    }
+
+    #portfolio::before {
+        @apply top-[40%] right-[60%] bg-[#d504ff];
+        filter: blur(300px)
+    }
+
+    .modal__portfolio {
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, .5);
+        @apply fixed inset-0 z-[10];
+    }
+
+    .modal__portfolio div {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@layer utilities {
+    .service__animate {
+        @apply relative;
+    }
+
+    .service__animate::before {
+        content: '';
+        @apply absolute bg-primary h-full w-0 -z-[1] top-0 left-0;
+    }
+
+    .service__animate::before,
+    .service__animate h3 {
+        @apply duration-500;
+    }
+
+    .service__animate:hover h3 {
+        @apply text-white translate-x-4;
+    }
+
+    .service__animate:hover::before {
+        @apply w-full;
+    }
+}

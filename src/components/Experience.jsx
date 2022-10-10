@@ -2,7 +2,7 @@ import { myExperience } from "../static_data"
 import styles from "../styles"
 
 const Experience = () => (
-    <section id="experience" className='flex flex-col justify-center min-h-[100vh] lg:min-h-[100vmin] relative' >
+    <section id="experience" className='flex flex-col justify-center min-h-[100vh] lg:max-h-[700px] relative' >
         <div className="self-center mt-10 mb-10">
             <h1 className={`${styles.heading} text-center`} >
                 My {" "}

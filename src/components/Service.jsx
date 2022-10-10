@@ -2,7 +2,7 @@ import { myService } from "../static_data"
 import styles from "../styles"
 
 const Service = () => (
-    <section id="service" className={`flex md:flex-row-reverse flex-col  py-10 md:items-center h-[100vh] lg:max-h-[700px]`}>
+    <section id="service" className={`flex md:flex-row-reverse flex-col  py-10 md:items-center h-[100vh] lg:h-[700px]`}>
         <div className="flex-1 flex flex-col md:pl-32">
             <h1 className={styles.heading}>
                 This Is My {" "}

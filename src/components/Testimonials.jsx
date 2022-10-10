@@ -13,7 +13,7 @@ const Card = ({ children }) => (
 )
 
 const Testimonials = () => (
-    <section id="testimonials" className='flex flex-col justify-center min-h-[100vh] lg:min-h-[100vh] relative mt-32' >
+    <section id="testimonials" className='flex flex-col justify-center min-h-[700px] relative mt-32' >
         <div className="self-center mt-10 mb-10">
             <h1 className={`${styles.heading} text-center`} >
                 Tasty<span className="text-secondary">monials</span>

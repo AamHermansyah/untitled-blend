@@ -15,7 +15,7 @@ const Portfolio = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <section id="portfolio" className='flex flex-col justify-start min-h-[100vh] lg:min-h-[100vmin] relative' >
+        <section id="portfolio" className='flex flex-col justify-start min-h-[700px] relative' >
             <div className="self-center mt-10 mb-10">
                 <h1 className={`${styles.heading} text-center`} >
                     My {" "}

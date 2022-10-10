@@ -2,8 +2,8 @@ import { bgHero } from "../assets"
 import styles from "../styles"
 
 const Hero = () => (
-    <section id="hero" className={`${styles.padding} overflow-hidden h-[700px]`}>
-        <img src={bgHero} className="absolute w-full h-[100vh] lg:h-[100vmin] top-0 left-0 object-cover z-[-1] opacity-25" />
+    <section id="hero" className={`${styles.padding} overflow-hidden h-[700px] relative`}>
+        <img src={bgHero} className="absolute w-full h-[700px] top-0 left-0 object-cover z-[-1] opacity-25" />
         <div className="flex-1 mt-10 md:mt-0">
             <h1 className={styles.heading}>
                 Hai! I'm Atthariq

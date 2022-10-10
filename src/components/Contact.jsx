@@ -13,7 +13,7 @@ const Icon = ({ icon, url, content }) => (
 )
 
 const Contact = () => (
-    <section id="contact" className={`${styles.flexCol} md:items-center min-h-[100vh] lg:min-h-[100vmin] mt-32 md:mt-0`}>
+    <section id="contact" className={`${styles.flexCol} md:items-center min-h-[100vh] lg:max-h-[700px] mt-32 md:mt-0`}>
         <div className="flex-1 flex flex-col justify-center">
             <h1 className={styles.heading}>
                 Get In Touch {" "}

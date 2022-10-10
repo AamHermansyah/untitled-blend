@@ -2,7 +2,7 @@ import { clients } from "../static_data"
 import styles from "../styles"
 
 const Clients = () => (
-    <section id="clients" className={`${styles.flexCol} md:items-center min-h-[100vh] lg:min-h-[100vmin]`}>
+    <section id="clients" className={`${styles.flexCol} md:items-center min-h-[650px]`}>
         <div className="flex-1 flex flex-col justify-center">
             <h1 className={styles.heading}>
                 Work for all these {" "}

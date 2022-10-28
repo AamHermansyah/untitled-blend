@@ -30,10 +30,16 @@ const Portfolio = () => {
                 <Card onClick={() => setToggle(bool => !bool)}>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </Card>
+                <Card onClick={() => setToggle(bool => !bool)}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </Card>
+                <Card onClick={() => setToggle(bool => !bool)}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </Card>
             </div>
 
             {/* modal */}
-            <div className={`${toggle ? 'hidden' : styles.flexCenter} modal__portfolio`}>
+            <div className={`${!toggle ? 'hidden' : styles.flexCenter} modal__portfolio`}>
                 <div className="ss:w-[75%] sm:w-[60%] md:w-[50%] w-full bg-white relative rounded-b-sm rounded-tl-sm shadow-xl">
                     <div className={`${styles.flexCenter} absolute -top-[30px] right-0 h-[30px] bg-secondary text-white cursor-pointer rounded-t-sm text-[14px]`} onClick={() => setToggle(bool => !bool)}>
                         close
